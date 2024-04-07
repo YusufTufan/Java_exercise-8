@@ -6,10 +6,10 @@ public class primeNumber {
         int sayi = scanner.nextInt();
         boolean asallik = true;        
 
-        if (sayi<=1){
+        if (sayi<=1){ //1 ve daha küçük mü kontrolü
             asallik = false;
         }else{
-            for (int i =2; i<=Math.sqrt(sayi); i++){
+            for (int i =2; i<=Math.sqrt(sayi); i++){  //Eğer sayının karekökü bölünüyorsa i'ye sayı asal değildir.
                 if (sayi %i ==0){
                     asallik= false;
                     break;
@@ -17,10 +17,10 @@ public class primeNumber {
             }
         }
         if(asallik){
-            System.out.print("Bu sayı asal sayıdır: "+sayi);
+            System.out.print(sayi+" asal sayıdır...");
         }else{
-            System.out.print("Bu sayı asal sayı değildir: "+sayi);
-        }
+            System.out.print(sayi+" asal sayı değildir...");
+        } //Asallık durumlarına göre yazdırma.
         scanner.close();  
     }
 }
