@@ -1,21 +1,30 @@
-# Asal Sayı Kontrolü
-Bu basit Java programı, kullanıcının girdiği bir sayının asal olup olmadığını kontrol eder.
-
-## Nasıl Çalışır?
-1. Kullanıcıdan bir sayı istenir.
-2. Girilen sayı, 1'den küçükse veya 2'den büyükse, sayı asal olamaz ve bu durum kullanıcıya bildirilir.
-3. Girilen sayının 2'den başlayarak, kareköküne kadar olan sayılara kadar bir döngü oluşturulur.
-4. Bu döngüde, sayının bu sayılara bölünüp bölünmediği kontrol edilir.
-5. Eğer bir sayı böleni varsa, sayı asal değildir ve bu durum kullanıcıya bildirilir.
-6. Eğer hiçbir bölen bulunamazsa, sayı asal olarak kabul edilir ve bu durum kullanıcıya bildirilir.
+# Prime Number Checker
+Bu Java programı, kullanıcının girdiği bir sayının asal olup olmadığını kontrol eder. Asal sayı, yalnızca kendisi ve 1'e bölünebilen, başka hiçbir pozitif tam sayıya bölünemeyen bir sayıdır.
 
 ## Kullanım
-1. Java derleyici ile `primeNumber.java` dosyasını derleyin: `javac primeNumber.java`
-2. Oluşan `.class` dosyasını çalıştırın: `java primeNumber`
-3. Program kullanıcıdan bir sayı girmesini isteyecek, ardından sayının asal olup olmadığını kontrol edecek ve sonucu ekrana yazdıracaktır.
+Programı çalıştırmak için bir Java IDE'si kullanarak veya terminalde aşağıdaki adımları takip ederek çalıştırabilirsiniz:
 
-## Örnek
-```
-Lütfen bir sayı giriniz: 17
-Bu sayı asal sayıdır: 17
-```
+1. Java derleyicisi ile `primeNumber.java` dosyasını derleyin:  
+   ```
+   javac primeNumber.java
+   ```
+
+2. Oluşturulan `.class` dosyasını çalıştırın:  
+   ```
+   java primeNumber
+   ```
+
+3. Program, bir sayı girmenizi isteyecek. Bir sayı girin ve program, girilen sayının asal olup olmadığını kontrol edecektir.
+4. 
+## Asal Sayı Kontrolü
+Program, girilen sayının asal olup olmadığını kontrol etmek için aşağıdaki adımları izler:
+
+1. Girilen sayı 1'den küçük veya eşitse, program sayının asal olmadığını belirtir.
+2. Aksi halde, sayının kareköküne kadar olan tüm tam sayıları deneyerek, girilen sayının asal olup olmadığını kontrol eder. Eğer bir tam sayıya bölünüyorsa, sayı asal değildir.
+
+## Notlar
+- Program, kullanıcıdan girdi almak için `Scanner` sınıfını kullanır.
+- Asal sayı kontrolü için, sayının kareköküne kadar olan tam sayılar üzerinde bir döngü kullanılır.
+- Program, girilen sayının asal olup olmadığını ekrana yazdırır.
+
+Bu README dosyası, programın nasıl çalıştırılacağını, nasıl kullanılacağını, asal sayı kontrolü için nasıl işlediğini ve diğer bazı bilgileri açıklar. Ayrıca, katkıları nasıl yapabileceğiniz hakkında bilgi verir ve projenin lisansını belirtir.
